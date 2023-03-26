@@ -18,6 +18,8 @@ public class Employee {
     @Setter
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
+    //up to 999 is allowed
+    //@Size(min = 1, max = 3, message = "Length must be 2-3 digits")
     private Long id;
 
     @Getter
@@ -34,5 +36,10 @@ public class Employee {
     @Setter
     @Column(name="DEPARTMENT")
     private String department;
+
+    @Getter
+    @Setter
+    @Column(name="JOB")
+    private String job;
 
 }

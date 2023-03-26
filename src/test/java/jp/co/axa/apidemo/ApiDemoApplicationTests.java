@@ -18,7 +18,9 @@ public class ApiDemoApplicationTests {
 
 	@Autowired
 	private EmployeeRepository employeeRepository;
-
+	//Enhance the code in any ways you can see, you are free! Some possibilities:
+	//Add tests
+	//so im testing that the service is not null and the controller can be tested as well
 	@Test
 	public void contextLoads() {
 		assertNotNull(employeeRepository);
